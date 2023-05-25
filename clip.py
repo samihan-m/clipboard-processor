@@ -3,7 +3,7 @@ from pynput.keyboard import Key, Listener, KeyCode
 
 do_process: bool = True
 
-def invert(key: KeyCode):
+def invert(key: KeyCode) -> None:
     global do_process
     try:
         if key.char == '`':
